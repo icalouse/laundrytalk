@@ -1,0 +1,41 @@
+.c-large{font-size:18px}
+.c-small{font-size: 10px}
+.c-top,.c-bottom{position:fixed;width:100%;z-index:1}
+.c-top{top:0}.c-bottom{bottom:0}.c-left{left:0;position: fixed;height: 100%;z-index: 1}
+.c-top-right{position: absolute;top:0;right:0}
+.c-top-left{position: absolute;top: 0;left: 0}
+.c-right{float:right}
+.c-bar{width:100%;overflow:hidden}.c-center .c-bar{display:inline-block;width:auto}
+.c-bar .c-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:inline-block;outline:0}
+.c-bar-item-large{padding:8px 16px;width:100%;border:2px;display:inline-block;outline:0;vertical-align: middle;}
+.c-bar-text{padding:4px 16px;width: auto;display: inline-block;}
+.c-bar-left{height: 100%;width:20%;display: inline-block}
+.c-button{border:none;display:inline-block;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.c-border{border:1px solid #ccc}
+.c-border-top{border-top:1px solid #ccc}.c-border-bottom{border-bottom:1px solid #ccc}
+.c-border-left{border-left:1px solid #ccc}.c-border-right{border-right:1px solid #ccc}
+.c-left-align{text-align:left}.c-right-align{text-align:right}.c-justify{text-align:justify}.c-center{text-align:center}
+.c-white,.c-hover-white:hover{color:#000;background-color:#fff}
+.c-black,.c-hover-black:hover{color:#fff!important;background-color:#000!important}
+.c-animate-bottom{position:relative;animation:animatebottom 1s}@keyframes animatebottom{from{opacity:0} to{opacity:1}}
+.c-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.c-overlay{position:fixed;display:none;width: 100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.2);z-index:2}
+.c-iframe{position: relative;width: 90%;height:90%;top:5%;left:5%;right:5%;bottom:5%}
+.c-video-frame{position: absolute;width: 80%;height: 100%;right: 0}
+.c-main,#main{transition:margin-left .4s;margin-left:0;margin-right:0}
+.c-padding-small{padding:4px 8px}
+.c-padding{padding:12px 24px}
+.c-padding-large{padding-bottom:64px;padding-top:64px}
+.c-half,.c-third,.c-twothird,.c-threequarter,.c-quarter{float:left;width:100%}
+.c-quarter{width:24.99999%}.c-third{width:33.33333%}.c-half{width:49.99999%}.c-twothird{width:66.66666%}.c-threequarter{width:74.99999%}
+.c-right80{float:right;width:80%}
+.c-container{padding:0.01em 16px}
+.c-hide{display: none}.c-show{display: flex}
+.c-theme-light {color:#fff; background-color:#333333}
+.c-theme-dark {color:#fff; background-color:#000000}
+.c-tooltip .c-tooltiptext {visibility: hidden;position: absolute;left: 5%;color: #fff;width: 90%;font-size: 20px;text-align: center;margin-top: 14px;z-index: 2;opacity: 0;pointer-events: none}
+.c-tooltip .c-tooltiptext::after {content: "";position: absolute;top: 50%;right: 100%;margin-top: -5px;border-width: 5px;border-style: solid;border-color: transparent #555 transparent transparent}
+.c-tooltip:hover .c-tooltiptext {visibility: visible;opacity: 0.6}
+.c-sidebar{height:100%;width:300px;background-color:rgb(140, 140, 140);position:fixed!important;z-index:1;overflow:auto}
+.c-column-item{padding:8px 16px;width:100%;}
+.c-column-left{display: flex;justify-content: space-evenly;flex-direction: column;width: 20%;box-sizing: border-box;height: 100%;padding-top: 16px;padding-bottom: 16px}
