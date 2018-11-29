@@ -24,6 +24,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
   bottom: 0;
   height: inherit;
 }
+svg{width: 100%; height: auto}
 
 </style>
 <body>
@@ -60,7 +61,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
   </div>
   <div id="info-box"></div>
 <!-- -620 100 2150 1000" -->
-  <svg viewBox="0 600 1000 480">
+  <svg viewBox="0 600 1000 470">
     <style type="text/css">
     .homa{fill:#766cb3;}
     .rosemont{fill:#76c8b3;}
@@ -293,7 +294,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 <!-- END MAIN -->
 
 <div class="c-hide c-bottom c-overlay" id="bottomOverlay">
-  <button class="c-button c-top-right c-theme-light c-hover-white" style="opacity:0.6; right:5%; top:5%; width: 40px; height: 30px; z-Index:7" onclick="close_bottom()"><i class="fa fa-close"></i></button>
+  <button class="c-button c-top-right c-theme-light c-hover-white" id="closeBottom" style="opacity:0.6; right:5%; top:5%; width: 40px; height: 30px; z-Index:7" onclick="close_bottom()"><i class="fa fa-close"></i></button>
   <iframe class="c-animate-bottom c-iframe" height="100%" width="100%" style="z-index:6" src="iframe_demo.html" frameborder="0" id="iframeResult" name="iframeResult">
   </iframe>
   <div class="c-overlay" onclick="close_bottom()" style="cursor:pointer;z-index:5" title="show map" id="popupOverlay"></div>
@@ -315,22 +316,22 @@ function selectFrame(tabID) {
   var iFrame = document.getElementById('iframeResult');
   switch (tabID) {
     case "homa":
-      iFrame.src = "iframe_demo.html";
+      iFrame.src = "popup.html";
       break;
     case "villeray":
-      iFrame.src = "greencreative/green.html";
+      iFrame.src = "popup.html";
       break;
     case "rosemont":
-      iFrame.src = "reverted/reverted.html";
+      iFrame.src = "popup.html";
       break;
     case "plateau":
-      iFrame.src = "new2.html";
+      iFrame.src = "popup.html";
       break;
     case "southwest":
-      iFrame.src = "new2.html";
+      iFrame.src = "popup.html";
       break;
     case "verdun":
-      iFrame.src = "new2.html";
+      iFrame.src = "popup.html";
       break;
 
   }

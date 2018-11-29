@@ -34,7 +34,6 @@
 .c-theme-light {color:#fff; background-color:#333333}
 .c-theme-dark {color:#fff; background-color:#000000}
 .c-tooltip .c-tooltiptext {visibility: hidden;position: absolute;left: 5%;color: #fff;width: 90%;font-size: 20px;text-align: center;margin-top: 14px;z-index: 2;opacity: 0;pointer-events: none}
-.c-tooltip .c-tooltiptext::after {content: "";position: absolute;top: 50%;right: 100%;margin-top: -5px;border-width: 5px;border-style: solid;border-color: transparent #555 transparent transparent}
 .c-tooltip:hover .c-tooltiptext {visibility: visible;opacity: 0.6}
 .c-sidebar{height:100%;width:300px;background-color:rgb(140, 140, 140);position:fixed!important;z-index:1;overflow:auto}
 .c-column-item{padding:8px 16px;width:100%;}
