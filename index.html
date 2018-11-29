@@ -56,20 +56,20 @@ svg{width: 100%; height: auto}
   <div class="c-overlay" onclick="closeSidebar()" style="cursor:pointer" title="close side menu" id="sideOverlay"></div>
 
 <div class="c-main">
-  <div id="static-box" style="position: absolute;bottom: 0;right: 0;width:400px;height:35px;border-width:2px;border-color:#002868;padding-left: 8px;border-style: dashed;font-size:20px;vertical-align:">
+  <div id="static-box" style="position: fixed;bottom: 0;right: 0;width:400px;height:35px;border-width:2px;border-color:#002868;padding-left: 8px;border-style: dashed;font-size:20px;vertical-align:">
     Select a borough:
   </div>
   <div id="info-box"></div>
 <!-- -620 100 2150 1000" -->
   <svg viewBox="0 600 1000 470">
     <style type="text/css">
-    .homa{fill:#766cb3;}
-    .rosemont{fill:#76c8b3;}
+    .homa{fill:#76c8b3;}
+    .rosemont{fill:#766cb3;}
     .villeray{fill:#c56cb3;}
     .plateau{fill:#766c04;}
     .southwest{fill:#c0d304;}
     .verdun{fill:#c03c04;}
-    .other{fill:#F3F3F3}
+    .other{fill:#F3F3F3;}
 
     path:hover:not(.other) {
       fill-opacity:1;
@@ -96,7 +96,7 @@ svg{width: 100%; height: auto}
     font-family: verdana;
   }
     </style>
-    <g>
+    <g preserveAspectRatio="xMaxYMid slice" overflow="hidden">
       <path
          class="other"
          style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -358,7 +358,7 @@ function closeSidebar() {
 function close_bottom() {
     $(overlayPop).hide();
     $(bottomOv).hide();
-    document.getElementById('iframeResult').src = "iframe_demo.html"
+    document.getElementById('iframeResult').src = ""
 }
 
 $("path").hover(function(e) {
