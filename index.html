@@ -3,8 +3,8 @@
 <title>LaundryTalk</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="stylesheet.css"
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Carrois+Gothic+SC|Krona+One|Open+Sans" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
@@ -14,16 +14,9 @@ h1 {
 }
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
-html,body{font-family:"Roboto",sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+html,body{font-family:"Open Sans",sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
-h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
-.c-sidebar {
-  z-index: 3;
-  width: 300px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
+h1,h2,h3,h4,h5,h6{font-family:"Carrois Gothic SC",sans-serif;font-weight:400;margin:10px 0}
 svg{width: 100%; height: auto}
 
 </style>
@@ -34,8 +27,8 @@ svg{width: 100%; height: auto}
   </a>
 
 <!-- sidebar -->
-  <nav class="c-hide c-sidebar c-bar-left c-large c-theme-light c-animate-left" id="mySidebar">
-    <a href="javascript:void(0)" onclick="closeSidebar()" class="c-top-right c-padding c-hover-black" title="Close Menu">
+  <nav class="c-hide c-sidebar c-bar-left c-large c-theme-light c-animate-left" id="mySidebar" style="z-index: 7">
+    <a href="javascript:void(0)" onclick="closeSidebar()" class="c-top-right c-padding c-hover-black c-theme-light" title="Close Menu">
       <i class="fa fa-remove" style="color:#ccc"></i>
     </a>
     <h4 class="c-bar-item-large"><b>About Us</b></h4>
@@ -53,48 +46,41 @@ svg{width: 100%; height: auto}
   </nav>
 
   <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="c-overlay" onclick="closeSidebar()" style="cursor:pointer" title="close side menu" id="sideOverlay"></div>
+  <div class="c-overlay" onclick="closeSidebar()" style="cursor:pointer;z-index: 5" id="sideOverlay"></div>
 
 <div class="c-main">
-  <div id="static-box" style="position: fixed;bottom: 0;right: 0;width:400px;height:35px;border-width:2px;border-color:#002868;padding-left: 8px;border-style: dashed;font-size:20px;vertical-align:">
-    Select a borough:
+  <div id="static-box" style="font-family: 'Carrois Gothic SC', sans-serif;position: fixed;text-align: right;bottom: 20%;right: 40px;width:400px;height:35px;padding-left: 8px;font-size:20px;">
+    <i>Select a borough</i>
   </div>
-  <div id="info-box"></div>
 <!-- -620 100 2150 1000" -->
   <svg viewBox="0 600 1000 470">
     <style type="text/css">
-    .homa{fill:#76c8b3;}
-    .rosemont{fill:#766cb3;}
-    .villeray{fill:#c56cb3;}
-    .plateau{fill:#766c04;}
-    .southwest{fill:#c0d304;}
-    .verdun{fill:#c03c04;}
-    .other{fill:#F3F3F3;}
+    .homa{color:#BB8588;}
+    .rosemont{color:#6C698D;}
+    .villeray{color:#D6CE93;}
+    .plateau{color:#76877D;}
+    .southwest{color:#82A6B1;}
+    .verdun{color:#E3C0D3;}
+    .other{color:#F3F3F3;}
+
+    path {
+      fill:currentColor
+    }
 
     path:hover:not(.other) {
+
       fill-opacity:1;
       fill-rule:evenodd;
-      stroke: #002868 !important;
+      stroke: currentColor;
       stroke-width:5px;
       stroke-linecap:butt;
       stroke-linejoin: round;
       stroke-opacity: 1;
-      fill: #002868 !important;
+      fill: currentColor !important;
       cursor: pointer;
     }
 
-    #info-box {
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    background-color: #ffffff;
-    border: 2px solid #BF0A30;
-    border-radius: 5px;
-    padding: 5px;
-    font-family: verdana;
-  }
+
     </style>
     <g preserveAspectRatio="xMaxYMid slice" overflow="hidden">
       <path
@@ -266,7 +252,7 @@ svg{width: 100%; height: auto}
          class="homa"
          d="m 640.0784,859.87303 c 12.82696,18.56242 12.70171,34.87466 -1.54387,48.73378 l 29.28152,0.50984 2.34523,2.97946 1.6196,-4.21565 4.07178,-1.44753 5.21759,5.42485 0.15283,-3.34755 c 0,0 1.28345,-2.5362 2.83421,-2.04755 1.55079,0.48866 6.38644,3.62272 6.38644,3.62272 l 42.34485,-5.00088 c -12.04186,-4.79201 -10.65294,-8.67882 -0.86308,-11.99941 l 29.32741,-2.62633 c 1.68396,-7.68233 11.94452,-3.81892 20.59566,-2.12207 l 6.91364,-4.0178 c 25.2509,-0.56038 45.95356,10.5985 78.10501,-35.56649 l 21.41326,-15.41226 21.68057,-12.3874 5.37806,1.55461 4.27806,-1.34755 -26.88936,-71.73107 -6.4629,1.6043 -7.24185,-16.14481 -3.02518,0.90213 -2.26133,5.48374 -3.43006,0.17943 2.32984,11.13131 -2.42937,2.77023 -3.06344,3.51561 -2.79599,-0.56595 -0.0307,9.19726 -4.47676,7.83128 -5.85941,2.94969 -2.29169,-6.63835 -1.48971,2.43619 -6.2184,-0.90921 -2.87224,-9.55185 -7.50195,8.73344 -8.74705,1.54968 -8.13591,2.37238 -16.64612,1.93128 -8.64691,-54.99055 -4.11768,4.58373 -4.69822,1.67023 -8.47217,11.15828 -2.24614,11.54479 -7.57065,6.33129 -3.30783,-1.07731 -3.82738,6.04049 -4.00295,-3.25675 -2.36053,-1.93406 -1.97095,-0.16594 0.33532,55.17212 -21.22208,2.34477 -5.95872,2.63833 -21.46667,11.96471 -14.36208,9.09232 -22.52091,13.03283 -12.12369,5.17666 z"
          id="homa"
-         data-info="<div>Mercier–Hochelaga-Maisonneuve</div>"
+         data-info="<div>Hochelaga-Maisonneuve</div>"
          onclick="selectFrame('homa')"
          />
       <path
@@ -304,10 +290,8 @@ svg{width: 100%; height: auto}
 <script>
 
 var bottomOv = document.getElementById('bottomOverlay');
-// Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
+var boroughBox = document.getElementById("static-box")
 var overlayBg = document.getElementById("sideOverlay");
 var overlayPop = document.getElementById("popupOverlay");
 
@@ -336,6 +320,7 @@ function selectFrame(tabID) {
 
   }
   closeSidebar();
+  $(boroughBox).hide();
   $(bottomOv).show();
   $(overlayPop).show();
 }
@@ -358,28 +343,17 @@ function closeSidebar() {
 function close_bottom() {
     $(overlayPop).hide();
     $(bottomOv).hide();
+    $(boroughBox).show();
     document.getElementById('iframeResult').src = ""
 }
 
 $("path").hover(function(e) {
   if($(this).hasClass('other')){
-    $('#info-box').css('display','none');
     $('#static-box').html('No borough selected');
   }
   else
-    $('#info-box').css('display','block');
-    $('#info-box').html($(this).data('info'));
     $('#static-box').html($(this).data('info'));
 });
-$("path").mouseleave(function(e) {
-  $('#info-box').css('display','none');
-});
-
-$(document).mousemove(function(e) {
-  $('#info-box').css('top',e.pageY-$('#info-box').height()-30);
-  $('#info-box').css('left',e.pageX-($('#info-box').width())/2);
-}).mouseover();
-
 </script>
 
 </body>
