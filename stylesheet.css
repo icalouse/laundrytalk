@@ -1,5 +1,5 @@
 .c-large{font-size:18px}
-.c-small{font-size: 10px}
+.c-small{font-size: 11px}
 .c-top,.c-bottom{position:fixed;width:100%;z-index:1}
 .c-top{top:0}.c-bottom{bottom:0}.c-left{left:0;position: fixed;height: 100%;z-index: 1}
 .c-top-right{position: absolute;top:0;right:0}
