@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="stylesheet.css">
-<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Carrois+Gothic+SC|Krona+One|Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Barlow|Heebo|Hind+Siliguri|Istok+Web" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
@@ -14,34 +14,35 @@ h1 {
 }
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
-html,body{font-family:"Open Sans",sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+html,body{font-family:"Istok Web",sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
-h1,h2,h3,h4,h5,h6{font-family:"Carrois Gothic SC",sans-serif;font-weight:400;margin:10px 0}
+h1,h2,h3,h4,h5,h6{font-family:"Istok Web",sans-serif;font-weight:400;margin:10px 0}
 svg{width: 100%; height: auto}
 
 </style>
 <body>
 
-  <a href="#" class="c-top-left c-padding c-hover-black c-theme-light" href="javascript:void(0)" onclick="openSidebar()">
+  <a href="#" class="c-top-left c-button c-hover-black c-theme-light" style="height:30px; width:40px; padding: 2px" href="javascript:void(0)" onclick="openSidebar()">
     <i class="fa fa-bars"></i>
   </a>
 
 <!-- sidebar -->
   <nav class="c-hide c-sidebar c-bar-left c-large c-theme-light c-animate-left" id="mySidebar" style="z-index: 7">
-    <a href="javascript:void(0)" onclick="closeSidebar()" class="c-top-right c-padding c-hover-black c-theme-light" title="Close Menu">
-      <i class="fa fa-remove" style="color:#ccc"></i>
+    <a href="javascript:void(0)" onclick="closeSidebar()" class="c-button c-top-right c-hover-black c-theme-light" style="width:40px; height:30px" title="Close Menu">
+      <i class="fa fa-remove" style="color:#ccc; font-size: 16px"></i>
     </a>
-    <h4 class="c-bar-item-large"><b>About Us</b></h4>
-    <div class="c-small c-bar-text">
-      ipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    <div class="c-bar-item-large">
+      <h4><b>LaundryTalk/ParleLavage</b></h4>
     </div>
-    <h4 class="c-bar-item-large"><b>Credits</b></h4>
     <div class="c-small c-bar-text">
-      ipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+      <p>LaundryTalk//ParleLavage is an ethnographic study of six laundromats in different Montreal neighbourhoods. Through sound and image, we have attempted to create a microcosm of these boroughs in the spot where most residents converge. Equally a study on language (made possible by the AHRC Cross-Language Dynamics program), these vignettes examine how different boroughs of Montreal are defined--and redefined--by conversation, shifting from French, to English, and beyond. This project was developed over the course of 2017-2018.</p>
+      <p>LaundryTalk/ParleLavage est un étudie ethnographic de six buanderies dans différents quartiers de Montreal. Utilizant le son et l’image, nous avons tenté de créer un microcosme de ces quartiers dans l’espace ou les habitants se rencontrer. Aussi un étude sur la langue (rendre possible du programme AHRC Cross-Language Dynamics), ces vignettes examine comment les quartiers de Montreal différents sont défini--et redéfini--par conversation, qui se va et vient entre Français et Anglais, et au-delà. Ce projet été développer au cours de 2017-2018.</p>
     </div>
-    <h4 class="c-bar-item-large"><b>Contact</b></h4>
     <div class="c-small c-bar-text">
-      ipisicing elit, sed do eiusmodip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+      <p>Created by/créé par Marina Miller & Holly Hilts</p>
+      <p>Web design by/conception de web par Nicolas Levy</p>
+      <p>Graphics by/graphiques par Perry Miller</p>
+      <p>Translation by/traduction par Max Mehran & Daphnée Rioux</p>
     </div>
   </nav>
 
@@ -49,7 +50,7 @@ svg{width: 100%; height: auto}
   <div class="c-overlay" onclick="closeSidebar()" style="cursor:pointer;z-index: 5" id="sideOverlay"></div>
 
 <div class="c-main">
-  <div id="static-box" style="font-family: 'Carrois Gothic SC', sans-serif;position: fixed;text-align: right;bottom: 20%;right: 40px;width:400px;height:35px;padding-left: 8px;font-size:20px;">
+  <div id="static-box" style="font-family: 'Hind Siliguri', sans-serif;position: fixed;text-align: right;bottom: 20%;right: 40px;width:400px;height:35px;padding-left: 8px;font-size:20px;">
     <i>Select a borough</i>
   </div>
 <!-- -620 100 2150 1000" -->
@@ -197,14 +198,14 @@ svg{width: 100%; height: auto}
          class="southwest"
          d="m 265.74077,902.55106 30.59573,6.83666 20.79446,10.08169 20.35132,10.95734 11.99562,3.63482 14.2639,5.46151 14.66479,7.47336 12.68135,5.78476 13.76812,0.13218 20.95288,-0.74642 16.18409,1.66703 12.34383,-0.55834 6.826,4.03641 5.80271,-4.45664 3.29169,0.5054 0.96002,3.00992 1.41372,1.41242 24.08614,10.58708 1.70913,0.82863 -3.8193,6.14524 -3.00681,-0.36728 -4.24116,-4.23721 -13.8419,-4.89343 -16.45841,-2.527 -28.19028,-4.57995 -16.34236,-0.65326 -15.51951,1.92667 -15.16071,-2.98834 -15.6565,-8.31766 -17.11245,-6.84257 -6.15081,-1.16459 -23.33702,-12.76839 -4.26228,-2.79345 -1.2135,14.31505 -15.62524,18.95977 -11.76358,0.11266 -12.74471,-1.45351 -9.24211,4.24313 8.64028,27.08935 41.7686,-1.92282 8.7145,2.40752 26.11195,-0.42613 10.09667,-3.82882 11.35227,-11.217 13.16687,-7.79274 16.09978,-2.37235 6.16135,0.44271 1.77234,6.31174 -10.15988,-1.65431 -9.06272,1.78562 5.20118,7.24712 -2.76422,2.6583 2.66917,3.83858 19.38103,-10.95942 2.25786,-7.26576 6.11913,3.3302 3.78746,5.83473 2.20463,25.78663 1.64563,14.9743 16.00471,4.1245 3.85083,1.5035 3.36546,5.2666 17.68217,7.1188 12.86089,-6.4871 7.20587,-2.3224 7.25869,-5.9317 9.17904,-19.54053 -4.93744,-5.66533 -5.88694,-9.39708 -0.16867,-8.07871 6.77345,-11.98294 3.38673,-5.99145 0.3378,-13.28563 -25.54223,0.70235 -9.88562,-0.79432 -1.95159,-13.66858 -25.34174,-3.1989 -1.77249,3.50261 -6.29851,-0.8727 -5.13796,-1.76401 -8.47189,0.61804 -0.22147,-4.46934 -17.90382,-1.77378 -10.13877,-3.09806 -3.43941,-0.21352 -9.94895,3.53692 -8.57736,-1.97754 -10.86677,-2.36051 -9.28418,-2.68373 -6.59393,-0.28892 -32.157,-17.77154 -49.11148,-5.99915 z"
          id="southwest"
-         data-info="<div>Le Sud-Ouest</div>"
+         data-info="<div>LE SUD-OUEST</div>"
          onclick="selectFrame('southwest')"
          />
       <path
          class="verdun"
          d="m 391.49836,1022.7716 8.23983,-4.3655 7.08986,-4.1961 8.53525,-4.9494 9.40024,4.5575 -5.8548,-41.00571 -4.36789,4.42529 -8.80954,4.08933 -11.87974,8.05329 -7.73319,-10.6557 2.61649,-2.36643 -2.27884,-1.10484 -2.88024,0.78457 -1.80404,-4.14612 -5.21188,3.2891 0.69629,1.42807 -19.30724,15.72065 -9.06273,1.78561 -12.75528,-0.73163 -21.51201,-0.25166 -17.92493,-0.33004 -20.53087,1.31452 10.13834,32.5411 12.28046,3.7729 8.21872,-2.9218 7.8705,1.2714 6.26682,3.0383 7.78615,-2.768 12.74471,1.4535 13.60986,1.1459 8.34529,-1.77 14.09523,-2.6171 5.99252,2.1783 2.62704,-3.0884 z m 2.66903,13.653 c -1.07839,0.4744 -2.23566,2.7717 -2.64819,4.532 -0.35357,1.5087 -1.65077,3.262 -2.36333,4.6702 -0.73571,1.4538 -2.50056,2.0858 -3.7665,2.5358 -1.07553,0.3824 -2.16534,1.2717 -3.47105,1.9521 -1.26429,0.6588 -2.3334,2.3884 -3.05966,3.2421 -1.04234,1.2253 -1.74199,2.7413 -2.50047,4.2402 -0.70359,1.3903 -1.63964,2.5391 -2.50048,4.2401 -0.79805,1.577 -0.46295,2.6835 1.09718,3.44 1.55106,0.7519 2.81977,1.7305 4.40998,2.5015 1.57403,0.7631 2.81681,1.7292 4.40999,2.5016 1.82566,0.8851 2.84414,1.0925 4.43111,1.0578 1.44855,-0.032 2.81571,-0.5097 4.31506,-0.8159 1.88504,-0.385 3.06133,0.078 4.58937,0.044 1.73449,-0.038 2.42127,-0.6214 3.74537,-1.0921 1.35718,-0.4825 2.77343,-1.9468 4.19905,-2.6897 1.50162,-0.7825 3.33642,-1.1861 4.32564,-1.5378 1.25255,-0.4452 2.73079,-0.2043 4.01966,-0.2321 1.60654,-0.035 3.15728,-0.6425 4.6105,-1.3998 0.92282,-0.4809 4.33008,-0.5276 4.88478,-0.5397 1.39344,-0.03 3.2103,-0.4594 5.0325,-0.8315 1.43474,-0.2931 3.23827,0.092 4.44166,0.3359 1.59388,0.3226 3.13204,1.155 4.70539,1.9178 1.70913,0.8286 3.41828,1.6573 5.12742,2.4859 1.88377,0.9133 3.00206,1.5658 4.86366,0.9041 1.34762,-0.4791 1.87428,-1.4395 2.90136,-2.2284 1.1121,-0.8541 1.88655,-1.6266 2.76421,-2.6583 1.19721,-1.4074 1.51194,-3.124 2.78534,-4.1021 1.09294,-0.8394 1.69184,-2.6422 2.35277,-3.9482 0.84198,-1.6639 -0.10922,-2.3361 -0.0843,-4.0393 0.0209,-1.4301 1.16813,-3.0287 2.0679,-4.0865 0.95465,-1.1222 1.54777,-3.0585 2.21562,-4.3782 1.02876,-2.0329 -0.33007,-1.9776 -2.11001,-2.8405 -1.80408,-0.8747 -3.60817,-1.7493 -5.41225,-2.624 -1.51924,-0.7365 -3.03847,-1.4731 -4.55769,-2.2097 -1.6905,-0.8195 -1.45591,-1.0112 -4.0091,-0.4897 -1.85513,0.3789 -2.12966,1.1485 -4.01966,0.2322 -1.23061,-0.5967 -2.89748,0.4127 -4.44167,-0.336 -1.47966,-0.7174 -2.9334,-1.4787 -4.42054,-1.7797 -1.67106,-0.3383 -2.92129,-1.0528 -4.42055,-1.7797 -1.67581,-0.8125 -3.44545,-0.9434 -5.13795,-1.7641 -1.42428,-0.6904 -2.84857,-1.381 -4.27284,-2.0715 -1.77294,-0.8596 -2.31157,-1.446 -3.40771,-2.3791 -1.21813,-1.0372 -3.20716,-1.3732 -4.28339,-1.3498 -1.8927,0.041 -2.70371,0.6953 -3.90363,2.106 -1.19015,1.399 -1.46484,2.731 -2.48993,3.5182 -1.0193,0.7829 -2.3707,1.3216 -3.32336,1.6602 -1.3361,0.475 -2.4694,1.1436 -3.75593,1.8141 -1.36686,0.7122 -2.51731,0.7684 -3.33393,2.382 -0.29948,0.5919 -0.40092,1.2597 -0.60138,1.8895 z"
          id="verdun"
-         data-info="<div>Verdun</div>"
+         data-info="<div>VERDUN</div>"
          onclick="selectFrame('verdun')"
          />
       <path
@@ -219,21 +220,21 @@ svg{width: 100%; height: auto}
          class="plateau"
          d="m 520.20324,783.06699 c 11.32565,0.12263 18.42732,8.59222 24.97269,18.1611 6.20787,2.3495 12.31715,5.71271 18.83085,4.91842 l 37.85281,3.87582 c 3.74888,1.27227 7.66898,2.3433 9.78589,5.53406 l 21.72563,41.32797 -63.20814,25.41743 -21.84098,9.15121 -25.63765,5.99446 -10.95485,3.37453 -0.17546,-16.4037 12.94107,-4.25397 0.0613,-11.28804 c 0,0 2.34565,-25.44633 1.00112,-25.835 -1.34451,-0.38865 -3.10919,-0.4546 -3.10919,-0.4546 z"
          id="pmr"
-         data-info="<div>Le Plateau-Mont-Royal</div>"
+         data-info="<div>LE PLATEAU-MONT-ROYAL</div>"
          onclick="selectFrame('plateau')"
          />
       <path
          class="rosemont"
          d="m 526.88046,752.61422 c 0,0 21.4054,-0.67667 22.44436,-0.69936 1.03896,-0.0227 13.01743,-2.37452 13.01743,-2.37452 l 14.04112,-1.35183 12.68892,-1.21779 1.65774,0.27732 0.10685,6.89508 c 0,0 21.55057,-3.50151 25.37788,-2.43555 3.82727,1.06597 56.25604,-4.57325 56.25604,-4.57325 l 6.1191,0.59784 0.74105,-0.95671 46.79092,-3.6349 1.37509,-1.70214 12.45209,0.77302 -0.12235,8.3632 4.83565,3.13406 -0.57375,53.41538 -19.17476,4.39016 -4.70586,2.19294 -23.23136,11.89876 -13.22381,9.38097 -13.10921,8.64692 -13.29254,6.97882 -19.49563,5.02423 -20.41169,-38.84852 c -3.00138,-10.14181 -16.23902,-12.11493 -30.54947,-13.23196 l -21.48177,-1.20278 -9.74012,-1.56382 -7.02049,-2.87732 -6.24889,-5.92486 -3.94942,-6.91565 -5.23287,-4.37945 -13.43751,-4.40923 -1.12285,-8.44049 c 5.95473,-3.51761 10.43547,-7.74985 8.22012,-15.22853 z"
          id="rosemont"
-         data-info="<div>Rosemont–La Petite-Patrie</div>"
+         data-info="<div>ROSEMONT–LA PETITE-PATRIE</div>"
          onclick="selectFrame('rosemont')"
          />
       <path
          class="villeray"
          d="m 486.38524,695.07976 13.3755,65.4424 5.15651,2.50001 9.96931,0.0957 4.36206,0.009 3.68984,-3.73835 -1.52772,-9.1632 -0.38193,-2.29079 30.95455,-0.25825 5.4163,-1.05889 15.94331,-3.58801 13.29243,0.12761 8.52551,-0.60424 0.84788,5.93837 36.08056,-2.77392 42.19968,-2.17603 0.0923,-41.80463 3.6669,-2.17024 -0.12885,-69.28504 -1.39794,-3.83619 -20.8019,2.02205 -5.81355,-0.1865 -0.48887,-2.07946 -57.30266,5.11865 1.89351,69.35099 -15.20218,-4.47518 -17.63143,-8.81137 -4.51478,-3.76811 -7.2497,-1.4092 z"
          id="villeray"
-         data-info="<div>Villeray–Saint-Michel–Parc-Extension</div>"
+         data-info="<div>VILLERAY</div>"
          onclick="selectFrame('villeray')"
          />
       <path
@@ -252,7 +253,7 @@ svg{width: 100%; height: auto}
          class="homa"
          d="m 640.0784,859.87303 c 12.82696,18.56242 12.70171,34.87466 -1.54387,48.73378 l 29.28152,0.50984 2.34523,2.97946 1.6196,-4.21565 4.07178,-1.44753 5.21759,5.42485 0.15283,-3.34755 c 0,0 1.28345,-2.5362 2.83421,-2.04755 1.55079,0.48866 6.38644,3.62272 6.38644,3.62272 l 42.34485,-5.00088 c -12.04186,-4.79201 -10.65294,-8.67882 -0.86308,-11.99941 l 29.32741,-2.62633 c 1.68396,-7.68233 11.94452,-3.81892 20.59566,-2.12207 l 6.91364,-4.0178 c 25.2509,-0.56038 45.95356,10.5985 78.10501,-35.56649 l 21.41326,-15.41226 21.68057,-12.3874 5.37806,1.55461 4.27806,-1.34755 -26.88936,-71.73107 -6.4629,1.6043 -7.24185,-16.14481 -3.02518,0.90213 -2.26133,5.48374 -3.43006,0.17943 2.32984,11.13131 -2.42937,2.77023 -3.06344,3.51561 -2.79599,-0.56595 -0.0307,9.19726 -4.47676,7.83128 -5.85941,2.94969 -2.29169,-6.63835 -1.48971,2.43619 -6.2184,-0.90921 -2.87224,-9.55185 -7.50195,8.73344 -8.74705,1.54968 -8.13591,2.37238 -16.64612,1.93128 -8.64691,-54.99055 -4.11768,4.58373 -4.69822,1.67023 -8.47217,11.15828 -2.24614,11.54479 -7.57065,6.33129 -3.30783,-1.07731 -3.82738,6.04049 -4.00295,-3.25675 -2.36053,-1.93406 -1.97095,-0.16594 0.33532,55.17212 -21.22208,2.34477 -5.95872,2.63833 -21.46667,11.96471 -14.36208,9.09232 -22.52091,13.03283 -12.12369,5.17666 z"
          id="homa"
-         data-info="<div>Hochelaga-Maisonneuve</div>"
+         data-info="<div>HOCHELAGA-MAISONNEUVE</div>"
          onclick="selectFrame('homa')"
          />
       <path
@@ -280,8 +281,8 @@ svg{width: 100%; height: auto}
 <!-- END MAIN -->
 
 <div class="c-hide c-bottom c-overlay" id="bottomOverlay">
-  <button class="c-button c-top-right c-theme-light c-hover-white" id="closeBottom" style="opacity:0.6; right:5%; top:5%; width: 40px; height: 30px; z-Index:7" onclick="close_bottom()"><i class="fa fa-close"></i></button>
-  <iframe class="c-animate-bottom c-iframe" height="100%" width="100%" style="z-index:6" src="iframe_demo.html" frameborder="0" id="iframeResult" name="iframeResult">
+  <button class="c-button c-top-right c-theme-light c-hover-white" id="closeBottom" style="font-size: 16px;opacity:0.6; right:5.03%; top:5%; width: 40px; height: 30px; z-Index:7" onclick="close_bottom()"><i class="fa fa-close"></i></button>
+  <iframe class="c-animate-bottom c-iframe" height="100%" width="100%" style="z-index:6" src="" frameborder="0" id="iframeResult" name="iframeResult">
   </iframe>
   <div class="c-overlay" onclick="close_bottom()" style="cursor:pointer;z-index:5" title="show map" id="popupOverlay"></div>
 </div>
@@ -348,11 +349,15 @@ function close_bottom() {
 }
 
 $("path").hover(function(e) {
+  $('#static-box').show();
   if($(this).hasClass('other')){
-    $('#static-box').html('No borough selected');
+    $('#static-box').html('');
   }
   else
     $('#static-box').html($(this).data('info'));
+});
+$("path").mouseleave(function(e) {
+  $('#static-box').hide();
 });
 </script>
 
