@@ -1,5 +1,5 @@
 html,body{font-family:"Istok Web",sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-h1{font-size:36px;font-family: "Heebo", sans-serif;font-weight: 200}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px;font-family: "Heebo", sans-serif;font-weight: 100}h5{font-size:18px}h6{font-size:14px;margin-top: -6px;margin-bottom:12px}
+h1{font-size:42px;font-family: "Heebo", sans-serif;font-weight: 200;letter-spacing: 4px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px;font-family: "Heebo", sans-serif;font-weight: 100}h5{font-size:18px}h6{font-size:14px;margin-top: -6px;margin-bottom:12px}
 h2,h3,h5,h6{font-family:"Barlow",sans-serif;font-weight:100;}
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
@@ -41,7 +41,7 @@ svg{width: 100%; height: auto}
 .c-hide{display: none}.c-show{display: flex}
 .c-theme-light {color:#fff; background-color:#333333}
 .c-theme-dark {color:#fff; background-color:#000000}
-.c-tooltip-bottom{text-decoration: none;position: relative;text-align: center;max-width: 300px;}
+.c-tooltip-bottom{text-decoration: none;position: relative;text-align: center;max-width: 380px;}
 .c-tooltip .c-tooltiptext {visibility: hidden;position: absolute;left: 5%;color: #fff;width: 90%;font-size: 20px;text-align: center;margin-top: 14px;z-index: 2;opacity: 0;pointer-events: none}
 .c-tooltip:hover .c-tooltiptext {visibility: visible;opacity: 0.6}
 .c-tooltip-bottom .c-tooltiptext {visibility: hidden;display: inline-block;position: relative;top: 25%;width: 120px;height: 50px;color: #fff;font-size: 22px;text-align: center;z-index: 2;opacity: 0;pointer-events: none}
