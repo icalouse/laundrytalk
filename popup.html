@@ -11,7 +11,7 @@
   body { background-color:rgba(0, 0, 0, 0.8);color: #fff}
 </style>
 <body>
-  <nav class="c-column-left c-left c-center c-large">
+  <nav id="side-stills" class="c-hide c-column-left c-left c-center c-large" style="display:none">
     <a class="c-tooltip" href="javascript:void(0)" onclick="showVid(304817092)">
       <span class="c-tooltiptext">Kevin</span>
       <img src="Kevin still.jpg" class="c-column-item video" alt="Kevin"></img>
@@ -24,22 +24,27 @@
       <span class="c-tooltiptext">Vadim</span>
       <img src="Vadim still.jpg" class="c-column-item video" alt="Vadim"></img>
     </a>
-
-
   </nav>
 
   <div class="c-main c-align-right">
 
-    <div id="intro-text" class="c-right80">
-      <div class="c-padding">
-        <h1 class="c-right c-container">Saint-Henri</h1>
-        <div class="c-twothird c-center c-container c-diagram">
-          <img width="90%" src="saint-henri-map.png"></img>
+    <div id="intro-text">
+      <div class="c-padding c-container">
+        <div class="c-popup-title c-left">
+          <h1>SAINT-HENRI</h1>
         </div>
-        <div class="c-third c-container">
+        <br>
+        <div class="c-right c-diagram">
+          <img width="30%" src="saint-henri-map.png"></img>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="c-popup-title c-left">
           <h3>Lavoir St-Jacques</h3>
           <p>4275 Rue Saint Jacques</p>
         </div>
+
       </div>
     </div>
     <div id="video-div" class="c-hide c-right80 c-container">
@@ -47,7 +52,24 @@
         <i class="fa fa-arrow-left"></i>
       </button>
       <iframe id="videoFrame" src="" class="c-video-frame" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>      </div>
-
+      <nav id="bottom-stills" class="c-bottom-row">
+        <a class="c-tooltip-bottom" href="javascript:void(0)" onclick="showVid(304817092)">
+          <span class="c-tooltiptext">Kevin</span>
+          <img class="c-scale-image video" src="Kevin still.jpg" alt="Kevin"></img>
+        </a>
+        <a class="c-tooltip-bottom" href="javascript:void(0)" onclick="showVid(304911023)">
+          <span class="c-tooltiptext">Shevy</span>
+          <img class="c-scale-image video" src="Shevy still.jpg" alt="Shevy"></img>
+        </a>
+        <a class="c-tooltip-bottom" href="javascript:void(0)" onclick="showVid(304924764)">
+          <span class="c-tooltiptext">Vadim</span>
+          <img class="c-scale-image video" src="Vadim still.jpg" alt="Vadim"></img>
+        </a>
+        <a class="c-tooltip-bottom" href="javascript:void(0)" onclick="showVid(304911023)">
+          <span class="c-tooltiptext">Shevy</span>
+          <img class="c-scale-image video" src="Shevy still.jpg" alt="Shevy"></img>
+        </a>
+      </nav>
   </div>
 
 <script>
@@ -56,10 +78,13 @@
   function hideVid() {
     $("#video-div").hide();
     player.src = "";
+    $("#side-stills").hide();
     $("#intro-text").show();
+    $("#bottom-stills").show();
   }
   function showVid(vidID) {
     $("#intro-text").hide();
+    $("#bottom-stills").hide();
     $("#video-div").hide();
     var vidURL = "https://player.vimeo.com/video/";
     console.log(vidID)
@@ -68,6 +93,7 @@
     console.log(vidURL);
     player.src = vidURL;
     $("#video-div").show();
+    $("#side-stills").show();
   }
   var original;
   $(".video").hover(function(){
