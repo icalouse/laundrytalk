@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>Hochelaga-Maisonneuve</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Barlow|Heebo|Hind+Siliguri|Istok+Web" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+  body { background-color:rgba(0, 0, 0, 0.8);color: #fff}
+</style>
+<body>
+  <nav id="side-stills" class="c-hide c-column-left c-left c-center c-large" style="display:none">
+    <a class="c-tooltip" href="javascript:void(0)" onclick="showVid(304915356)">
+      <span class="c-tooltiptext">Felix</span>
+      <img src="Felix still.jpg" class="c-column-item video" alt="Felix"></img>
+    </a>
+    <a class="c-tooltip" href="javascript:void(0)" onclick="showVid(304819392)">
+      <span class="c-tooltiptext">Diane</span>
+      <img src="Diane still.jpg" class="c-column-item video" alt="Diane"></img>
+    </a>
+  </nav>
+  <div class="c-main c-align-right">
+
+    <div id="intro-text">
+      <div class="c-padding c-container">
+        <div class="c-popup-title c-left">
+          <h1>HOCHELAGA-MAISONNEUVE</h1>
+        </div>
+        <br>
+        <div class="c-right c-diagram">
+          <img width="25%" src="homa-map.png"></img>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="c-popup-title c-left">
+          <h3>Aquanet</h3>
+          <p>4055 Rue Ontario Est</p>
+        </div>
+
+      </div>
+    </div>
+    <div id="video-div" class="c-hide c-right80 c-container">
+      <button class="c-button c-top-right c-theme-light c-hover-white" style="opacity:0.6; left:20%; top:0; width: 40px; height: 30px; z-Index:7" onclick="hideVid()">
+        <i class="fa fa-arrow-left"></i>
+      </button>
+      <iframe id="videoFrame" src="" class="c-video-frame" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>      </div>
+      <nav id="bottom-stills" class="c-bottom-row">
+        <a class="c-tooltip-bottom" href="javascript:void(0)" onclick="showVid(304915356)">
+          <span class="c-tooltiptext">Felix</span>
+          <img src="Felix still.jpg" class="c-scale-image video" alt="Felix"></img>
+        </a>
+        <a class="c-tooltip-bottom" href="javascript:void(0)" onclick="showVid(304819392)">
+          <span class="c-tooltiptext">Diane</span>
+          <img src="Diane still.jpg" class="c-scale-image video" alt="Diane"></img>
+        </a>
+      </nav>
+  </div>
+
+<script>
+  var player = document.getElementById("videoFrame");
+
+  function hideVid() {
+    $("#video-div").hide();
+    player.src = "";
+    $("#side-stills").hide();
+    $("#intro-text").show();
+    $("#bottom-stills").show();
+  }
+  function showVid(vidID) {
+    $("#intro-text").hide();
+    $("#bottom-stills").hide();
+    $("#video-div").hide();
+    var vidURL = "https://player.vimeo.com/video/";
+    console.log(vidID)
+    vidID = vidID.toString();
+    vidURL += vidID + "?autoplay=1&transparent=0&byline=0&portrait=0&title=0";
+    console.log(vidURL);
+    player.src = vidURL;
+    $("#video-div").show();
+    $("#side-stills").show();
+  }
+  var original;
+  $(".video").hover(function(){
+    original = $(this).attr("src");
+    $(this).attr("src","play-button.jpg");
+  }, function(){
+    $(this).attr("src",original);
+  });
+</script>
+</body>
+</html>
