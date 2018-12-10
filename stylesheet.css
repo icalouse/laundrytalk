@@ -1,5 +1,5 @@
 html,body{font-family:"Istok Web",sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-h1{font-size:42px;font-family: "Heebo", sans-serif;font-weight: 200;letter-spacing: 4px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px;font-family: "Heebo", sans-serif;font-weight: 100}h5{font-size:18px}h6{font-size:14px;margin-top: -6px;margin-bottom:12px}
+h1{font-size:42px;font-family: "Heebo", sans-serif;font-weight: 200;letter-spacing: 4px}h2{font-size:30px}h3{font-size:26px;letter-spacing: 3px}h4{font-size:20px;font-family: "Heebo", sans-serif;font-weight: 100}h5{font-size:18px}h6{font-size:14px;margin-top: -6px;margin-bottom:12px}
 h2,h3,h5,h6{font-family:"Barlow",sans-serif;font-weight:100;}
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
@@ -32,12 +32,12 @@ svg{width: 100%; height: auto}
 .c-video-frame{position: absolute;width: 80%;height: 100%;right: 0}
 .c-main,#main{transition:margin-left .4s;margin-left:0;margin-right:0}
 .c-padding-small{padding:4px 8px}
-.c-padding{padding:12px 24px}
+.c-padding{padding:16px 24px}
 .c-padding-large{padding-bottom:64px;padding-top:64px}
 .c-half,.c-third,.c-twothird,.c-threequarter,.c-quarter{float:left;width:100%}
 .c-quarter{width:24.99999%}.c-third{width:33.33333%}.c-half{width:49.99999%}.c-twothird{width:66.66666%}.c-threequarter{width:74.99999%}
 .c-right80{float:right;width:80%}
-.c-container{padding:0.01em 16px;display: inline-block;}
+.c-container{padding:36px 16px;display: inline-block;}
 .c-hide{display: none}.c-show{display: flex}
 .c-theme-light {color:#fff; background-color:#333333}
 .c-theme-dark {color:#fff; background-color:#000000}
@@ -49,7 +49,7 @@ svg{width: 100%; height: auto}
 .c-sidebar{height:100%;width:300px;background-color:rgb(140, 140, 140);position:fixed!important;z-index:1;overflow:auto}
 .c-column-item{padding:8px 16px;width:100%;}
 .c-column-left{display: flex;justify-content: space-evenly;flex-direction: column;width: 20%;box-sizing: border-box;height: 100%;padding-top: 16px;padding-bottom: 16px}
-.c-diagram{text-align: right;margin-right: 40px}
-.c-scale-image{max-width: 100%;max-height: 100%;height: auto;width: 100%;padding: 8px}
+.c-diagram{text-align: right;margin-right: 40px;margin-top: -32px}
+.c-scale-image{max-width: 100%;max-height: 100%;height: auto;width: 100%;padding-left: 4px;padding-right: 4px;padding-bottom: 48px;z-index: 5}
 .c-bottom-row{position: fixed;bottom:0;max-height: 350px;height: auto;display: flex;justify-content: space-evenly;flex-direction: row;width: 100%;box-sizing: border-box;padding-left: 16px;padding-right: 16px}
 .c-popup-title{display: inline-block;margin-left: 25px;}
